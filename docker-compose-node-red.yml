@@ -1,6 +1,6 @@
 services:
   nodered-app:
-    # container_name: nodered-app
+    container_name: nodered-app
     image: nodered/node-red:latest-22
     volumes:
       - ./data:/data
@@ -16,7 +16,7 @@ services:
 
   postgres-db:
     image: postgres:latest
-    # container_name: postgres-db
+    container_name: postgres-db
     environment:
       POSTGRES_DB: nodered
       POSTGRES_USER: nodered
@@ -28,7 +28,7 @@ services:
 
   adminer-app:
     image: adminer:latest
-    # container_name: adminer-app
+    container_name: adminer-app
     depends_on:
       - postgres-db
     ports:
