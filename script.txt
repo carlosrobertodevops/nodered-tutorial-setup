@@ -1,0 +1,9 @@
+Setup: https://github.com/ErickWendel/nodered-tutorial-setup
+
+Full examples: https://github.com/ErickWendel/nodered-minicurso
+
+https://nodered.org/docs/user-guide/runtime/securing-node-red
+
+To gererate your password: docker exec -it nodered-ew node-red-admin hash-pw
+
+https://flows.nodered.org/node/@erickwendel/nodered-knex-connection
